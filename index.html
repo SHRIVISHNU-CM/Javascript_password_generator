@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-0 m-0 box-border h-screen  grid items-center w-full justify-center bg-no-repeat bg-cover" style="background-image: url(images/pass.webp);" >
+
+    <div class="w-full h-min p-2 md:p-5 text-center bg-[#e1e114d]  rounded-2xl  " style="box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); backdrop-filter: blur( 7.5px ); border: 1px solid rgba( 255, 255, 255, 0.18 );">
+        <div>
+            <input  type="text" name="input" disabled id="text" class="text-white text-2xl p-1 w-full  rounded-xl border-none outline-none md:text-3xl">
+            <div class="border-b-2 m-1"></div>
+            <form action="">
+                <div class="flex justify-between">
+                    <label>
+                        <h3 class="text-white text-1xl">Password Length</h3>
+                    </label>
+                    <input type="number" class="w-12  text-white bg-gradient-to-r from-green-400 to-blue-500  outline-none border-none " name="passlength" id="passlength">
+                </div>
+                <div class="flex justify-between">
+                    <label> <h3 class="text-white text-1xl">Upper case (A - Z)</h3></label>
+                    <input  type="checkbox" name="upper" id="upper">
+                </div>
+                <div class="flex justify-between">
+                    <label>
+                        <h3 class="text-white text-1xl">Numers (0 - 9) </h3>
+                    </label>
+                    <input type="checkbox" name="nums" id="nums">
+                </div>
+                <div class="flex justify-between">
+                    <label>
+                        <h3 class="text-white text-1xl">Lower case (a - z)</h3>
+                    </label>
+                    <input type="checkbox" name="lower" id="lower">
+                </div>
+                <div class="flex justify-between">
+                    <label>
+                        <h3 class="text-white text-1xl">Symbols (~ - /)</h3>
+                    </label>
+                    <input type="checkbox" name="symbols" id="symbols">
+                </div>
+                
+
+            </form>
+        </div>
+        <button class="border w-full rounded-xl shadow-lg shadow-sky-500/50 p-3 mt-4  bg-gradient-to-r from-purple-400 to-pink-500 text-white" id="generatepassword">Generate Password</button>
+        <button
+            class="border w-full rounded-xl shadow-lg shadow-sky-500/50 p-3 mt-4  bg-gradient-to-r from-purple-400 to-pink-500 text-white "
+            id="copy password">Copy Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
